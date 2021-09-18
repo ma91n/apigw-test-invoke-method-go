@@ -28,5 +28,5 @@ func main() {
 	if err := req.Send(); err != nil {
 		log.Fatalf("test invoke: %v", err)
 	}
-	fmt.Printf("%d\n%v\n%v\n", *resp.Status, resp.Headers, *resp.Body)
+	fmt.Printf("%d\n%v\n%v\n", *resp.Status, aws.StringValueMap(resp.Headers), *resp.Body)
 }
