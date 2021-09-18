@@ -1,0 +1,1 @@
+# apigw-test-invoke-method-go
